@@ -1,0 +1,21 @@
+version: "3"
+services:
+  web:
+    image: app1
+    ports:
+      - "80:80"
+    depends_on:
+      - db
+  db:
+    image: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: .my-secret-pw.
+      MYSQL_DATABASE: proje1
+      MYSQL_USER: db_user
+      MYSQL_PASSWORD: .mypwd.
+    volumes:
+      - db-data:/var/lib/mysql
+volumes:
+  db-data:
+
+    
