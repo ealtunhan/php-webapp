@@ -1,7 +1,8 @@
 # configured aws provider with proper credentials
 provider "aws" {
   region  = "ca-central-1"
-  profile = "EricA"
+  access_key = "AKIA3UNTWUM6SOKNPMA5"
+  secret_key = "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"
 }
 
 

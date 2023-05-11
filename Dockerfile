@@ -17,7 +17,7 @@ RUN wget https://github.com/ealtunhan/php-webapp.git
 RUN unzip main.zip
 
 # copy files into html directory
-RUN cp -r techmax-main/* /var/www/html/
+RUN cp -r php-webapp-main/* /var/www/html/
 
 # remove unwanted folder
 RUN rm -rf php-webapp-main main.zip
